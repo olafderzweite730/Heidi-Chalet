@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chalet Heidi · Beatenberg · Ferienchalet im Berner Oberland</title>
+<meta name="description" content="Chalet Heidi in Beatenberg: ruhiges Ferienchalet mit einmaliger Aussicht auf Eiger, Mönch und Jungfrau. Jetzt Verfügbarkeit prüfen und anfragen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Chalet <span>Heidi</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#chalet" data-i18n="nav_chalet">Das Chalet</a>
+    <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+    <a href="#lage" data-i18n="nav_location">Lage</a>
+    <a href="#kalender" data-i18n="nav_availability">Verfügbarkeit</a>
+    <a href="#kontakt" data-i18n="nav_contact" class="nav-cta">Anfragen</a>
+  </nav>
+  <div class="nav-right">
+    <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">EN</button>
+    <button class="burger" id="burger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <img src="images/photo-34.jpg" alt="Bergpanorama Eiger Mönch Jungfrau von Beatenberg" class="hero-bg">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-kicker" data-i18n="hero_kicker">Beatenberg · Berner Oberland · 1250 m ü. M.</p>
+    <h1>Chalet Heidi</h1>
+    <p class="hero-sub" data-i18n="hero_sub">Ferienchalet mit einmaliger Aussicht auf Eiger, Mönch und Jungfrau</p>
+    <div class="hero-actions">
+      <a href="#kalender" class="btn btn-primary" data-i18n="hero_btn_availability">Verfügbarkeit ansehen</a>
+      <a href="#kontakt" class="btn btn-outline" data-i18n="hero_btn_book">Buchungsanfrage</a>
+    </div>
+  </div>
+</section>
+
+<section class="facts">
+  <div class="fact"><span class="fact-num">1250 m</span><span class="fact-label" data-i18n="fact_altitude">Höhenlage</span></div>
+  <div class="fact"><span class="fact-num">15 min</span><span class="fact-label" data-i18n="fact_interlaken">von Interlaken</span></div>
+  <div class="fact"><span class="fact-num">3</span><span class="fact-label" data-i18n="fact_rooms">Zimmer</span></div>
+  <div class="fact"><span class="fact-num">E·M·J</span><span class="fact-label" data-i18n="fact_view">Aussicht</span></div>
+</section>
+
+<section class="section" id="chalet">
+  <div class="container">
+    <p class="eyebrow" data-i18n="chalet_eyebrow">Willkommen</p>
+    <h2 class="section-title" data-i18n="chalet_title">Was Sie an dieser Unterkunft lieben werden</h2>
+    <div class="two-col">
+      <div>
+        <p data-i18n="chalet_p1">Unser Chalet Heidi ist im wunderschönen Berner Oberland bei Beatenberg gelegen. Das einfache, aber mit viel Liebe eingerichtete Haus bietet eine einmalige Aussicht auf Eiger, Mönch und Jungfrau.</p>
+        <p data-i18n="chalet_p2">Ob Familienurlaub oder Erholungsurlaub – autofrei und mit eigenem Wäldchen – Chalet Heidi ist die perfekte Unterkunft, um das malerische Berner Oberland zu entdecken. Ruhe und Natur werden Ihren Urlaub prägen.</p>
+        <p data-i18n="chalet_p3">Das Chalet ist sehr ruhig inmitten der Natur gelegen, rund ums Haus erstrecken sich Wiesen. Der Garten mit Cheminée und Grillplatz im Wald lädt zum Verweilen ein.</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-i18n="features_title">Ausstattung</h3>
+        <ul class="feature-list">
+          <li data-i18n="feature_1">3 Zimmer im 1. Stock mit Bad und WC</li>
+          <li data-i18n="feature_2">Wohnzimmer mit TV im Erdgeschoss</li>
+          <li data-i18n="feature_3">Schlafzimmer und Küche im Erdgeschoss</li>
+          <li data-i18n="feature_4">Dusche/WC im Erdgeschoss</li>
+          <li data-i18n="feature_5">Balkon mit schöner Aussicht</li>
+          <li data-i18n="feature_6">Garten mit Cheminée und Grillplatz im Wald</li>
+          <li data-i18n="feature_7">Einfache Küche mit allem, was man braucht</li>
+          <li data-i18n="feature_8">Eigenes Wäldchen, autofrei</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="galerie">
+  <div class="container">
+    <p class="eyebrow" data-i18n="gallery_eyebrow">Bilder</p>
+    <h2 class="section-title" data-i18n="gallery_title">Galerie</h2>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section class="section" id="lage">
+  <div class="container">
+    <p class="eyebrow" data-i18n="location_eyebrow">Die Umgebung</p>
+    <h2 class="section-title" data-i18n="location_title">Was Sie am Viertel lieben werden</h2>
+    <div class="two-col">
+      <div>
+        <p data-i18n="location_p1">Es gibt nur wenige Nachbarn – Ruhe ist garantiert. Von der nächsten Bushaltestelle laufen Sie zu Fuss ca. 20 Minuten, vom Autoparkplatz ca. 10 Minuten. Die Strecke führt über einen Wanderweg: Rucksack und gute Schuhe sind ein «Muss».</p>
+        <p data-i18n="location_p2">Beatenberg liegt auf ca. 1250 m ü. M., von Interlaken beträgt die Fahrt ca. 15 Minuten. Der Ort ist der ideale Ausgangspunkt für Wanderungen, Ausflüge zum Niederhorn und in die ganze Region Interlaken.</p>
+      </div>
+      <img src="images/photo-35.jpg" alt="Aussicht vom Chalet auf die Bergwelt" class="location-img" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="kalender">
+  <div class="container">
+    <p class="eyebrow" data-i18n="cal_eyebrow">Termine</p>
+    <h2 class="section-title" data-i18n="cal_title">Verfügbarkeit</h2>
+    <p class="cal-hint" data-i18n="cal_hint">Klicken Sie auf Anreise und Abreise, um Ihre Wunschtermine auszuwählen. Belegte Zeiträume sind rot markiert.</p>
+    <div class="calendar-wrap">
+      <div class="calendar" id="calendar"></div>
+      <div class="cal-legend">
+        <span><span class="dot dot-free"></span><span data-i18n="legend_free">frei</span></span>
+        <span><span class="dot dot-blocked"></span><span data-i18n="legend_blocked">belegt</span></span>
+        <span><span class="dot dot-selected"></span><span data-i18n="legend_selected">Ihre Auswahl</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kontakt">
+  <div class="container">
+    <p class="eyebrow" data-i18n="contact_eyebrow">Reservierung</p>
+    <h2 class="section-title" data-i18n="contact_title">Buchungsanfrage</h2>
+    <p data-i18n="contact_intro">Senden Sie uns Ihre Anfrage – wir melden uns schnellstmöglich bei Ihnen.</p>
+    <form id="bookingForm" class="booking-form">
+      <div class="form-row">
+        <label><span data-i18n="form_name">Name</span>
+          <input type="text" id="fName" required>
+        </label>
+        <label><span data-i18n="form_email">E-Mail</span>
+          <input type="email" id="fEmail" required>
+        </label>
+      </div>
+      <div class="form-row three">
+        <label><span data-i18n="form_arrival">Anreise</span>
+          <input type="date" id="fArrival" required>
+        </label>
+        <label><span data-i18n="form_departure">Abreise</span>
+          <input type="date" id="fDeparture" required>
+        </label>
+        <label><span data-i18n="form_guests">Personen</span>
+          <input type="number" id="fGuests" min="1" max="8" value="2" required>
+        </label>
+      </div>
+      <label><span data-i18n="form_message">Nachricht</span>
+        <textarea id="fMessage" rows="4"></textarea>
+      </label>
+      <p class="form-error" id="formError" hidden data-i18n="form_error">Der gewählte Zeitraum enthält belegte Tage. Bitte wählen Sie andere Termine.</p>
+      <button type="submit" class="btn btn-primary" data-i18n="form_submit">Anfrage senden</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Chalet Heidi · Beatenberg · <span data-i18n="footer_region">Berner Oberland, Schweiz</span></p>
+  </div>
+</footer>
+
+<script src="js/availability.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
