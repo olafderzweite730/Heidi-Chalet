@@ -14,10 +14,10 @@ Warm, ruhig, alpin, viel Weissraum, mobile-first. Deutsch + Englisch mit Umschal
 
 ## Vor dem Livegang anpassen
 
-1. **E-Mail-Adresse**: in `js/availability.js` oben `DEINE-EMAIL@BEISPIEL.CH`
-   ersetzen (Buchungsanfragen gehen an diese Adresse). Auch in `kontakt.html`
-   die angezeigte E-Mail ersetzen.
-2. **Telefon**: in `kontakt.html` Platzhalter `+41 00 000 00 00` ersetzen.
+1. **E-Mail-Adresse**: in `js/availability.js` oben eintragen (Buchungsanfragen
+   gehen an diese Adresse). Aktuell: jimmy77@bluewin.ch. Auch in `kontakt.html`
+   die angezeigte E-Mail anpassen.
+2. **Telefon**: in `kontakt.html`. Aktuell: +41 078 843 02 53.
 3. **Preise**: in `preise.html` die Tabelle – momentan «auf Anfrage».
 4. **Gästestimmen**: in `index.html` sind drei Beispiel-Zitate mit
    Platzhaltern («Beispielstimme») – durch echte Gäste-Reviews ersetzen.
