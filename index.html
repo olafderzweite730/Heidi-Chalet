@@ -7,13 +7,13 @@
 <meta name="description" content="Chalet Heidi in Beatenberg: ruhiges Ferienchalet mit einmaliger Aussicht auf Eiger, Mönch und Jungfrau. Jetzt Verfügbarkeit prüfen und anfragen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="nav">
-  <a class="brand" href="#top">Chalet <span>Heidi</span></a>
+  <a class="brand" href="#top">Chalet <em>Heidi</em></a>
   <nav class="nav-links" id="navLinks">
     <a href="#chalet" data-i18n="nav_chalet">Das Chalet</a>
     <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
@@ -55,7 +55,7 @@
     <p class="eyebrow" data-i18n="chalet_eyebrow">Willkommen</p>
     <h2 class="section-title" data-i18n="chalet_title">Was Sie an dieser Unterkunft lieben werden</h2>
     <div class="two-col">
-      <div>
+      <div class="chalet-text">
         <p data-i18n="chalet_p1">Unser Chalet Heidi ist im wunderschönen Berner Oberland bei Beatenberg gelegen. Das einfache, aber mit viel Liebe eingerichtete Haus bietet eine einmalige Aussicht auf Eiger, Mönch und Jungfrau.</p>
         <p data-i18n="chalet_p2">Ob Familienurlaub oder Erholungsurlaub – autofrei und mit eigenem Wäldchen – Chalet Heidi ist die perfekte Unterkunft, um das malerische Berner Oberland zu entdecken. Ruhe und Natur werden Ihren Urlaub prägen.</p>
         <p data-i18n="chalet_p3">Das Chalet ist sehr ruhig inmitten der Natur gelegen, rund ums Haus erstrecken sich Wiesen. Der Garten mit Cheminée und Grillplatz im Wald lädt zum Verweilen ein.</p>
@@ -77,15 +77,21 @@
   </div>
 </section>
 
-<section class="section section-alt" id="galerie">
+<section class="break">
+  <img src="images/photo-35.jpg" alt="Aussicht auf die schneebedeckte Bergwelt" loading="lazy">
+</section>
+
+<section class="section" id="galerie">
   <div class="container">
     <p class="eyebrow" data-i18n="gallery_eyebrow">Bilder</p>
     <h2 class="section-title" data-i18n="gallery_title">Galerie</h2>
+  </div>
+  <div class="container-wide">
     <div class="gallery" id="gallery"></div>
   </div>
 </section>
 
-<section class="section" id="lage">
+<section class="section section-alt" id="lage">
   <div class="container">
     <p class="eyebrow" data-i18n="location_eyebrow">Die Umgebung</p>
     <h2 class="section-title" data-i18n="location_title">Was Sie am Viertel lieben werden</h2>
@@ -94,12 +100,12 @@
         <p data-i18n="location_p1">Es gibt nur wenige Nachbarn – Ruhe ist garantiert. Von der nächsten Bushaltestelle laufen Sie zu Fuss ca. 20 Minuten, vom Autoparkplatz ca. 10 Minuten. Die Strecke führt über einen Wanderweg: Rucksack und gute Schuhe sind ein «Muss».</p>
         <p data-i18n="location_p2">Beatenberg liegt auf ca. 1250 m ü. M., von Interlaken beträgt die Fahrt ca. 15 Minuten. Der Ort ist der ideale Ausgangspunkt für Wanderungen, Ausflüge zum Niederhorn und in die ganze Region Interlaken.</p>
       </div>
-      <img src="images/photo-35.jpg" alt="Aussicht vom Chalet auf die Bergwelt" class="location-img" loading="lazy">
+      <img src="images/photo-19.jpg" alt="Chalet Heidi und Umgebung" class="location-img" loading="lazy">
     </div>
   </div>
 </section>
 
-<section class="section section-alt" id="kalender">
+<section class="section" id="kalender">
   <div class="container">
     <p class="eyebrow" data-i18n="cal_eyebrow">Termine</p>
     <h2 class="section-title" data-i18n="cal_title">Verfügbarkeit</h2>
@@ -115,11 +121,11 @@
   </div>
 </section>
 
-<section class="section" id="kontakt">
+<section class="section section-alt" id="kontakt">
   <div class="container">
     <p class="eyebrow" data-i18n="contact_eyebrow">Reservierung</p>
     <h2 class="section-title" data-i18n="contact_title">Buchungsanfrage</h2>
-    <p data-i18n="contact_intro">Senden Sie uns Ihre Anfrage – wir melden uns schnellstmöglich bei Ihnen.</p>
+    <p class="contact-intro" data-i18n="contact_intro">Senden Sie uns Ihre Anfrage – wir melden uns schnellstmöglich bei Ihnen.</p>
     <form id="bookingForm" class="booking-form">
       <div class="form-row">
         <label><span data-i18n="form_name">Name</span>
@@ -151,7 +157,8 @@
 
 <footer class="footer">
   <div class="container">
-    <p>Chalet Heidi · Beatenberg · <span data-i18n="footer_region">Berner Oberland, Schweiz</span></p>
+    <p class="footer-brand">Chalet <em>Heidi</em></p>
+    <p data-i18n="footer_region">Beatenberg · Berner Oberland · Schweiz</p>
   </div>
 </footer>
 

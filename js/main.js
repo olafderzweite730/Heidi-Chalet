@@ -76,6 +76,7 @@ const DE = {
 };
 
 const PHOTOS = Array.from({ length: 42 }, (_, i) => `images/photo-${String(i + 1).padStart(2, "0")}.jpg`);
+const LANDSCAPE = [1, 4, 5, 6, 7, 10, 14, 19, 34, 35, 36, 39, 41, 42];
 
 let lang = "de";
 let calDate = new Date();
@@ -219,6 +220,7 @@ function buildGallery() {
     img.src = src;
     img.alt = "Chalet Heidi Beatenberg";
     img.loading = "lazy";
+    img.className = LANDSCAPE.includes(PHOTOS.indexOf(src) + 1) ? "wide" : "tall";
     img.addEventListener("click", () => openLightbox(src));
     gallery.appendChild(img);
   });
