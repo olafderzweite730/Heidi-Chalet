@@ -1,4 +1,5 @@
-const PHOTOS = Array.from({ length: 42 }, (_, i) => `images/photo-${String(i + 1).padStart(2, "0")}.jpg`);
+const PHOTO_ORDER = [34, 35, 33, 32, 41, 15, 22, 19, 28, 31, 25, 23, 29, 26, 40, 27, 17, 30, 18, 24, 21, 36, 38, 39, 37, 42, 20, 9, 5, 2, 10, 12, 13, 4, 7, 11, 14, 16, 6, 1, 3, 8];
+const PHOTOS = PHOTO_ORDER.map((n) => `images/photo-${String(n).padStart(2, "0")}.jpg`);
 const LANDSCAPE = [1, 4, 5, 6, 7, 10, 14, 19, 34, 35, 36, 39, 41, 42];
 
 let lang = "de";
@@ -139,12 +140,13 @@ function selectDate(iso) {
 function buildGallery() {
   const gallery = document.getElementById("gallery");
   if (!gallery) return;
-  PHOTOS.forEach((src, idx) => {
+  PHOTOS.forEach((src) => {
+    const num = parseInt(src.match(/(\d+)/)[1], 10);
     const img = document.createElement("img");
     img.src = src;
     img.alt = "Chalet Heidi Beatenberg";
     img.loading = "lazy";
-    img.className = LANDSCAPE.includes(idx + 1) ? "wide" : "tall";
+    img.className = LANDSCAPE.includes(num) ? "wide" : "tall";
     img.addEventListener("click", () => openLightbox(src));
     gallery.appendChild(img);
   });
