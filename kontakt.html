@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anfrage &amp; Kontakt · Chalet Heidi Beatenberg</title>
+<meta name="description" content="Buchungsanfrage für das Chalet Heidi in Beatenberg: Verfügbarkeit prüfen, Anfrage senden, Anfahrt mit Karte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Chalet <em>Heidi</em></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="chalet.html" data-i18n="nav_chalet">Das Chalet</a>
+      <a href="galerie.html" data-i18n="nav_gallery">Galerie</a>
+      <a href="umgebung.html" data-i18n="nav_area">Umgebung</a>
+      <a href="preise.html" data-i18n="nav_prices">Preise &amp; Verfügbarkeit</a>
+      <a href="kontakt.html" class="cta active" data-i18n="nav_contact">Anfrage</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">EN</button>
+      <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:110px">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="contact_eyebrow">Anfrage</p>
+    <h1 class="section-title" data-i18n="contact_title">Buchungsanfrage &amp; Kontakt</h1>
+    <p class="lead" data-i18n="contact_intro">Senden Sie uns eine unverbindliche Anfrage – wir melden uns schnellstmöglich bei Ihnen.</p>
+
+    <div class="booking-grid">
+      <form id="bookingForm" class="booking-form">
+        <div class="form-row">
+          <label><span data-i18n="form_name">Name</span>
+            <input type="text" id="fName" required>
+          </label>
+          <label><span data-i18n="form_email">E-Mail</span>
+            <input type="email" id="fEmail" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form_arrival">Anreise</span>
+            <input type="date" id="fArrival" required>
+          </label>
+          <label><span data-i18n="form_departure">Abreise</span>
+            <input type="date" id="fDeparture" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form_guests">Personen</span>
+            <input type="number" id="fGuests" min="1" max="8" value="2" required>
+          </label>
+          <label><span data-i18n="form_message">Nachricht</span>
+            <input type="text" id="fMessage">
+          </label>
+        </div>
+        <p class="form-error" id="formError" hidden data-i18n="form_error">Der gewählte Zeitraum enthält belegte Tage. Bitte wählen Sie andere Termine.</p>
+        <button type="submit" class="btn btn-primary" data-i18n="form_submit">Anfrage senden</button>
+        <p class="lead" style="font-size:0.85rem" data-i18n="form_note">Die Anfrage öffnet Ihr E-Mail-Programm mit ausgefüllten Angaben.</p>
+      </form>
+
+      <div>
+        <h2 class="section-title" style="font-size:1.5rem" data-i18n="contact_details">Kontaktdaten</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="label" data-i18n="c_email">E-Mail</span>
+            <span class="value"><a href="mailto:DEINE-EMAIL@BEISPIEL.CH">DEINE-EMAIL@BEISPIEL.CH</a></span>
+          </li>
+          <li>
+            <span class="label" data-i18n="c_phone">Telefon</span>
+            <span class="value">+41 00 000 00 00</span>
+          </li>
+          <li>
+            <span class="label" data-i18n="c_address">Adresse</span>
+            <span class="value">Chalet Heidi, 3803 Beatenberg, Schweiz</span>
+          </li>
+        </ul>
+        <p class="lead" style="margin-top:20px; font-size:0.9rem" data-i18n="c_response">Wir antworten in der Regel innert 24 Stunden.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sand">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="map_eyebrow">Lage</p>
+    <h2 class="section-title" data-i18n="map_title">So finden Sie uns</h2>
+    <p class="lead" data-i18n="map_hint">Beatenberg, Berner Oberland. Von Interlaken ca. 15 Autominuten, danach ca. 10 Minuten zu Fuss vom Autoparkplatz.</p>
+    <div class="map-wrap">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.72%2C46.65%2C7.83%2C46.72&amp;layer=mapnik&amp;marker=46.6833%2C7.7667" title="Karte Beatenberg" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2 data-i18n="cta_title">Bereit für einen ruhigen Urlaub über dem Thunersee?</h2>
+    <p data-i18n="cta_text">Prüfen Sie die Verfügbarkeit und senden Sie uns eine unverbindliche Anfrage.</p>
+    <a href="preise.html" class="btn btn-primary" data-i18n="hero_btn">Verfügbarkeit prüfen</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer-brand">Chalet <em>Heidi</em></p>
+    <p data-i18n="footer_tagline">Ferienchalet in Beatenberg, Berner Oberland</p>
+    <nav>
+      <a href="chalet.html" data-i18n="nav_chalet">Das Chalet</a>
+      <a href="galerie.html" data-i18n="nav_gallery">Galerie</a>
+      <a href="umgebung.html" data-i18n="nav_area">Umgebung</a>
+      <a href="preise.html" data-i18n="nav_prices">Preise &amp; Verfügbarkeit</a>
+      <a href="kontakt.html" data-i18n="nav_contact">Anfrage</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/availability.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

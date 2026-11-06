@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preise &amp; Verfügbarkeit · Chalet Heidi Beatenberg</title>
+<meta name="description" content="Preise und Verfügbarkeit des Chalet Heidi in Beatenberg: Saisonpreise, Belegungskalender und Buchungsbedingungen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Chalet <em>Heidi</em></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="chalet.html" data-i18n="nav_chalet">Das Chalet</a>
+      <a href="galerie.html" data-i18n="nav_gallery">Galerie</a>
+      <a href="umgebung.html" data-i18n="nav_area">Umgebung</a>
+      <a href="preise.html" class="active" data-i18n="nav_prices">Preise &amp; Verfügbarkeit</a>
+      <a href="kontakt.html" class="cta" data-i18n="nav_contact">Anfrage</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">EN</button>
+      <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:110px">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="prices_eyebrow">Preise &amp; Verfügbarkeit</p>
+    <h1 class="section-title" data-i18n="prices_title">Preise &amp; Verfügbarkeit</h1>
+    <p class="lead" data-i18n="prices_intro">Die Preise richten sich nach Saison und Aufenthaltsdauer. Belegte Zeiträume sind im Kalender rot markiert – senden Sie uns eine Anfrage für Ihre Wunschtermine.</p>
+
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th data-i18n="col_season">Saison</th>
+          <th data-i18n="col_period">Zeitraum</th>
+          <th data-i18n="col_price">Preis pro Nacht</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="season_winter">Winter</td>
+          <td data-i18n="season_winter_p">Dezember – März</td>
+          <td data-i18n="price_on_request">auf Anfrage</td>
+        </tr>
+        <tr>
+          <td data-i18n="season_summer">Sommer</td>
+          <td data-i18n="season_summer_p">Juni – September</td>
+          <td data-i18n="price_on_request">auf Anfrage</td>
+        </tr>
+        <tr>
+          <td data-i18n="season_off">Nebensaison</td>
+          <td data-i18n="season_off_p">April – Mai, Oktober – November</td>
+          <td data-i18n="price_on_request">auf Anfrage</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="lead" style="margin-top:18px; font-size:0.9rem" data-i18n="price_note">Alle Preise sind Beispielwerte – bitte anpassen. Endreinigung, Bettwäsche und Kurtaxe kommen gemäss Mietbedingungen hinzu.</p>
+
+    <div class="booking-grid">
+      <div>
+        <p class="lead" style="margin-top:44px" data-i18n="cal_hint">Klicken Sie im Kalender auf Anreise und Abreise – die Termine werden ins Anfrageformular übernommen. Belegte Zeiträume sind rot markiert.</p>
+        <div class="calendar-wrap">
+          <div class="calendar" id="calendar"></div>
+          <div class="cal-legend">
+            <span><span class="dot dot-free"></span><span data-i18n="legend_free">frei</span></span>
+            <span><span class="dot dot-blocked"></span><span data-i18n="legend_blocked">belegt</span></span>
+            <span><span class="dot dot-selected"></span><span data-i18n="legend_selected">Ihre Auswahl</span></span>
+          </div>
+        </div>
+      </div>
+      <form id="bookingForm" class="booking-form">
+        <div class="form-row">
+          <label><span data-i18n="form_name">Name</span>
+            <input type="text" id="fName" required>
+          </label>
+          <label><span data-i18n="form_email">E-Mail</span>
+            <input type="email" id="fEmail" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form_arrival">Anreise</span>
+            <input type="date" id="fArrival" required>
+          </label>
+          <label><span data-i18n="form_departure">Abreise</span>
+            <input type="date" id="fDeparture" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form_guests">Personen</span>
+            <input type="number" id="fGuests" min="1" max="8" value="2" required>
+          </label>
+          <label><span data-i18n="form_message">Nachricht</span>
+            <input type="text" id="fMessage">
+          </label>
+        </div>
+        <p class="form-error" id="formError" hidden data-i18n="form_error">Der gewählte Zeitraum enthält belegte Tage. Bitte wählen Sie andere Termine.</p>
+        <button type="submit" class="btn btn-primary" data-i18n="form_submit">Anfrage senden</button>
+        <p class="lead" style="font-size:0.85rem" data-i18n="form_note">Die Anfrage öffnet Ihr E-Mail-Programm mit ausgefüllten Angaben.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer-brand">Chalet <em>Heidi</em></p>
+    <p data-i18n="footer_tagline">Ferienchalet in Beatenberg, Berner Oberland</p>
+    <nav>
+      <a href="chalet.html" data-i18n="nav_chalet">Das Chalet</a>
+      <a href="galerie.html" data-i18n="nav_gallery">Galerie</a>
+      <a href="umgebung.html" data-i18n="nav_area">Umgebung</a>
+      <a href="preise.html" data-i18n="nav_prices">Preise &amp; Verfügbarkeit</a>
+      <a href="kontakt.html" data-i18n="nav_contact">Anfrage</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/availability.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

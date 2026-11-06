@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie · Chalet Heidi Beatenberg</title>
+<meta name="description" content="Bilder vom Chalet Heidi in Beatenberg: Panoramablick auf Eiger, Mönch und Jungfrau, das Haus und seine gemütlichen Räume.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Chalet <em>Heidi</em></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="chalet.html" data-i18n="nav_chalet">Das Chalet</a>
+      <a href="galerie.html" class="active" data-i18n="nav_gallery">Galerie</a>
+      <a href="umgebung.html" data-i18n="nav_area">Umgebung</a>
+      <a href="preise.html" data-i18n="nav_prices">Preise &amp; Verfügbarkeit</a>
+      <a href="kontakt.html" class="cta" data-i18n="nav_contact">Anfrage</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">EN</button>
+      <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-top:110px">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="gallery_eyebrow">Eindrücke</p>
+    <h1 class="section-title" data-i18n="gallery_title">Galerie</h1>
+    <p class="lead" data-i18n="gallery_intro">Panoramen, das Haus, der Garten und das gemütliche Innere – ein erster Eindruck vom Chalet Heidi.</p>
+  </div>
+  <div class="wrap">
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2 data-i18n="cta_title">Bereit für einen ruhigen Urlaub über dem Thunersee?</h2>
+    <p data-i18n="cta_text">Prüfen Sie die Verfügbarkeit und senden Sie uns eine unverbindliche Anfrage.</p>
+    <a href="kontakt.html" class="btn btn-primary" data-i18n="cta_btn">Anfrage senden</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer-brand">Chalet <em>Heidi</em></p>
+    <p data-i18n="footer_tagline">Ferienchalet in Beatenberg, Berner Oberland</p>
+    <nav>
+      <a href="chalet.html" data-i18n="nav_chalet">Das Chalet</a>
+      <a href="galerie.html" data-i18n="nav_gallery">Galerie</a>
+      <a href="umgebung.html" data-i18n="nav_area">Umgebung</a>
+      <a href="preise.html" data-i18n="nav_prices">Preise &amp; Verfügbarkeit</a>
+      <a href="kontakt.html" data-i18n="nav_contact">Anfrage</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/availability.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
